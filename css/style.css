@@ -112,7 +112,7 @@ body.dark{
 
 .social_media{
     position: relative;
-    left: 120px;
+    left: 100px;
     top: -20px;
 }
 
@@ -120,19 +120,36 @@ body.dark{
     list-style: none;
     display: flex;
     float: left;
-    gap: 15px;
+    gap: 25px;
 }
 
 .social_media a {
     text-decoration: none;
-    color: #333;
-    font-size: 30px;
-    transition: color 0.3s ease;
+    font-size: 25px;
+    transition: color 0.3s ease, transform 0.5s ease;
 }
 
-.social_media ul li a:hover {
-    color: #0077b5; /* Example: LinkedIn blue, adjust per platform */
+.fa-facebook-f {
+    color: #1f5de2; 
 }
+
+.fa-youtube {
+    color: #ff0000;
+}
+
+.fa-instagram {
+    color: #e4405f; 
+}
+
+.fa-linkedin-in {
+    color: #0077b5;
+}
+
+li:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.5,1.5);
+}
+
 
 .footer{
     background-color: rgb(223, 39, 217);
