@@ -1,0 +1,58 @@
+body.light{
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark{
+    background-color: #121212;
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.toogle_mode{
+    background-color: rgb(223, 39, 217);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+.slider{
+    background-color: rgb(90, 88, 88);
+    height: 10px;
+    width: 35px;
+    border-radius: 10%;
+    position: relative;
+    left: 96%;
+    top: 20px;
+    transition: transform 0.3s ease; 
+}
+
+.slider:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 0.3s;
+}
+
+.thumb{
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: relative;
+    left: 0px;
+    bottom: 2px;
+    transition: left 0.3s ease;
+}
+
+.footer{
+    background-color: rgb(223, 39, 217);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    text-align: center;
+}
