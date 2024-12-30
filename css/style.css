@@ -47,12 +47,12 @@ body.dark{
 
 .profile_card{
     height: 450px;
-    width: 350px;
+    width: 450px;
     border-radius: 10px;
-    background-color: black;
+    background-color: rgb(246, 240, 240);
     position: relative;
     top: 150px;
-    left: 625px;
+    left: 580px;
     box-shadow: 5px 10px 5px rgb(58, 57, 58);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -60,6 +60,78 @@ body.dark{
 .profile_card:hover{
     transform: scale(1.1,1.1);
     box-shadow: 5px 10px 5px rgb(223, 39, 217);
+}
+
+.top_frame{
+    height: 200px;
+    width: 450px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(223, 39, 217);
+    position: relative;
+}
+
+.image_container{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: solid 3px rgb(223, 39, 217);
+    position: relative;
+    left: 130px;
+    top: 25px;
+}
+
+.image img{
+    height: 195px;
+    width: 195px;
+    border-radius: 50%;
+    background-color: rgb(223, 39, 217);
+    position: relative;
+    left: 3px;
+    top: 2px;
+    object-fit: cover;
+}
+
+.credentials{
+    position: relative;
+    left: 150px;
+}
+
+.credentials h2{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.credentials h3{
+    margin-top: 0px;
+    position: relative;
+    left: 8px;
+    font-style: italic;
+}
+
+.social_media{
+    position: relative;
+    left: 120px;
+    top: -20px;
+}
+
+.social_media ul{
+    list-style: none;
+    display: flex;
+    float: left;
+    gap: 15px;
+}
+
+.social_media a {
+    text-decoration: none;
+    color: #333;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.social_media ul li a:hover {
+    color: #0077b5; /* Example: LinkedIn blue, adjust per platform */
 }
 
 .footer{
