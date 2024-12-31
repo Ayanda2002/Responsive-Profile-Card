@@ -6,7 +6,6 @@ body.light{
 
 body.dark{
     background-color: #121212;
-    color: white;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -80,6 +79,11 @@ body.dark{
     position: relative;
     left: 130px;
     top: 25px;
+    transition: transform 0.3s ease;
+}
+
+.image_container:hover{
+    transform: scale(1.05,1.05);
 }
 
 .image img{
@@ -96,6 +100,11 @@ body.dark{
 .credentials{
     position: relative;
     left: 150px;
+    transition: transform 0.3s ease;
+}
+
+.credentials:hover{
+    transform: scale(1.05,1.05);
 }
 
 .credentials h2{
@@ -113,7 +122,7 @@ body.dark{
 .social_media{
     position: relative;
     left: 100px;
-    top: -20px;
+    top: -20px;   
 }
 
 .social_media ul{
@@ -126,7 +135,6 @@ body.dark{
 .social_media a {
     text-decoration: none;
     font-size: 25px;
-    transition: color 0.3s ease, transform 0.5s ease;
 }
 
 .fa-facebook-f {
@@ -150,6 +158,31 @@ li:hover {
     transform: scale(1.5,1.5);
 }
 
+.buttons{
+    display: flex;
+    gap: 50px;
+}
+
+.buttons input{
+    height: 40px;
+    width: 100px;
+    border-radius: 10%;
+    background-color: rgb(255, 0, 247);
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 50px;
+    right: 100px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.5s ease, box-shadow 0.3s ease;
+    font-size: 15px;
+    font-weight: 300;   
+}
+
+.buttons input:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.2,1.2);  
+    box-shadow: 5px 10px 5px rgb(223, 39, 217);   
+}
 
 .footer{
     background-color: rgb(223, 39, 217);
